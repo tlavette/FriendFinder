@@ -1,6 +1,7 @@
 // list dependancies; express for routes, body parser to GET JSON formatted data.
 const express = require('express');
 var bodyParser = require('body-parser');
+var path = require('path');
 
 // start express server
 const app = express();

@@ -5,9 +5,10 @@ Friend Finder Application is a dating application that creates potential matches
 
 
 ### Prerequisites
-npm install
+npm 
 package.json
-npm install express
+express
+body-parser
 
 
 

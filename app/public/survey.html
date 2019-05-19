@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Survey Questions</h2>
+
+        </div>
+        <div class="card-body">
+            <form method="POST" role="form">
+
+                <div class="form-group">
+                    <h3><strong>About you</strong></h3>
+                    <label for="name">Name (Required)</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="link">Hyperlink to your photo</label>
+                    <input type="text" class="form-control" id="link">
+                </div>
+
+                <!-- dropdown Survey questions begin -->
+
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                        <h3>Question 1</h3>
+                        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Select Answer</option>
+                            <option value="1">(Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">(Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row align-items-center">
+                        <div class="col-auto my-1">
+                            <h3>Question 2</h3>
+                            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Select Answer</option>
+                                <option value="1">(Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">(Strongly Agree)</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                
+
+                <div class="form-row align-items-center">
+                        <div class="col-auto my-1">
+                            <h3>Question 3</h3>
+                            <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Select Answer</option>
+                                <option value="1">(Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">(Strongly Agree)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                            <div class="col-auto my-1">
+                                <h3>Question 4</h3>
+                                <h4>You rarely do something just out of sheer curiosity.</h4>
+                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>Select Answer</option>
+                                    <option value="1">(Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">(Strongly Agree)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row align-items-center">
+                                <div class="col-auto my-1">
+                                    <h3>Question 5</h3>
+                                    <h4>People can rarely upset you.</h4>
+                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>Select Answer</option>
+                                        <option value="1">(Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">(Strongly Agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row align-items-center">
+                                    <div class="col-auto my-1">
+                                        <h3>Question 6</h3>
+                                        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+                                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                            <option selected>Select Answer</option>
+                                            <option value="1">(Strongly Disagree)</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">(Strongly Agree)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row align-items-center">
+                                        <div class="col-auto my-1">
+                                            <h3>Question 7</h3>
+                                            <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+                                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                <option selected>Select Answer</option>
+                                                <option value="1">(Strongly Disagree)</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">(Strongly Agree)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row align-items-center">
+                                            <div class="col-auto my-1">
+                                                <h3>Question 8</h3>
+                                                <h4>You rarely get carried away by fantasies and ideas.</h4>
+                                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                    <option selected>Select Answer</option>
+                                                    <option value="1">(Strongly Disagree)</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">(Strongly Agree)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row align-items-center">
+                                                <div class="col-auto my-1">
+                                                    <h3>Question 9</h3>
+                                                    <h4>You think that everyone’s views should be respected regardless of whether they are supported.</h4>
+                                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Select Answer</option>
+                                                        <option value="1">(Strongly Disagree)</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">(Strongly Agree)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row align-items-center">
+                                                    <div class="col-auto my-1">
+                                                        <h3>Question 10</h3>
+                                                        <h4>You feel more energetic after spending time with a group of people.</h4>
+                                                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                            <option selected>Select Answer</option>
+                                                            <option value="1">(Strongly Disagree)</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">(Strongly Agree)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                <!-- Submit button -->
+
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+        </div>
+        </form>
+
+
+
+        <script type="text/javascript">
+            // This button will run a function that will save the input data from the customer below
+            $("#add-btn").on("click", function (event) {
+                event.preventDefault();
+                var newReservation = {
+                    name: $("#name").val().trim(),
+                    number: $("#number").val().trim(),
+                    email: $("#email").val().trim(),
+                    time: $("#time").val().trim()
+                };
+
+                // post newReservation information data
+                $.post("/api/reservation", newReservation)
+                    .then(function (data) {
+                        console.log(newReservation, data);
+                        alert("Sending reservation request...");
+                    });
+            });
+        </script>
+
+</body>
+
+</html>
