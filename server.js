@@ -3,14 +3,15 @@ const express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 
+
 // start express server
-const app = express();
+var app = express();
 var PORT = process.env.PORT || 8080;
 
-// Send "Hello World to confirm sending of root on port" 
-app.get('/', function (req, res) {
-  res.send('Server set up complete');
-})
+// Send message to confirm sending of root on port" 
+// app.get('/', function (req, res) {
+//   res.send('Server set up complete');
+// })
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -18,11 +19,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
  
-app.use(function (req, res) {
-  res.setHeader('Content-Type', 'text/plain')
-  res.write('you posted:\n')
-  res.end(JSON.stringify(req.body, null, 2))
-})
+
+require('./app/routing/htmlRoutes.js')(app);
 
 // start listener
 app.listen(PORT, function(){
