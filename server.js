@@ -1,7 +1,8 @@
 // list dependancies; express for routes, body parser to GET JSON formatted data.
 const express = require('express');
 var bodyParser = require('body-parser');
-var path = require('path');
+const http = require('http');
+
 
 
 // start express server
@@ -21,6 +22,9 @@ app.use(bodyParser.json())
  
 
 require('./app/routing/htmlRoutes.js')(app);
+require('./app/routing/apiRoutes.js')(app);
+
+app.post('/data/friends',(req, res) => res)
 
 // start listener
 app.listen(PORT, function(){
