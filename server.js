@@ -19,12 +19,15 @@ app.use(bodyParser.urlencoded({ extended: false }))
  
 // parse application/json
 app.use(bodyParser.json())
+app.use(express.static("./app/public"))
+
+
  
 
 require('./app/routing/htmlRoutes.js')(app);
 require('./app/routing/apiRoutes.js')(app);
 
-app.post('/data/friends',(req, res) => res)
+
 
 // start listener
 app.listen(PORT, function(){

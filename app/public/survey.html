@@ -35,9 +35,9 @@
                 <!-- dropdown Survey questions begin -->
 
                 <div class="form-row align-items-center">
-                        <div class="col-auto my-1">
+                    <div class="col-auto my-1">
                         <h3>Question 1</h3>
-                        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>           
+                        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                         <select class="custom-select mr-sm-2" style="width:auto" id="q1">
                             <option selected>Select Answer</option>
@@ -71,21 +71,21 @@
                 <br>
 
                 <div class="form-row align-items-center">
-                        <div class="col-auto my-1">
-                            <h3>Question 3</h3>
-                            <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
-                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                            <select class="custom-select mr-sm-2" style="width:auto" id="q3">
-                                <option selected>Select Answer</option>
-                                <option value="1">(Strongly Disagree)</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">(Strongly Agree)</option>
-                            </select>
-                        </div>
+                    <div class="col-auto my-1">
+                        <h3>Question 3</h3>
+                        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                        <select class="custom-select mr-sm-2" style="width:auto" id="q3">
+                            <option selected>Select Answer</option>
+                            <option value="1">(Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">(Strongly Agree)</option>
+                        </select>
                     </div>
-                    <br>
+                </div>
+                <br>
                 <br>
 
                 <div class="form-row align-items-center">
@@ -203,7 +203,7 @@
                         <h3>Question 10</h3>
                         <h4>You feel more energetic after spending time with a group of people.</h4>
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                        <select class="custom-select mr-sm-2"style="width:auto" id="q10">
+                        <select class="custom-select mr-sm-2" style="width:auto" id="q10">
                             <option selected>Select Answer</option>
                             <option value="1">(Strongly Disagree)</option>
                             <option value="2">2</option>
@@ -219,12 +219,12 @@
                 <!-- Submit button -->
                 <!--  Removed this button class="brn brn-primary btn-lg btn-block"-->
                 <div class="col-4">
-                    <button id="surveyBtn" button type="submit" input
-                        type="submit" class="btn btn-primary">Submit</button>
+                    <button id="surveyBtn" button type="submit" input type="submit"
+                        class="btn btn-primary">Submit</button>
                 </div>
         </div>
         </form>
-        
+
         <!-- Javascript handling of survey data upon submit -->
         <script type="text/javascript">
 
@@ -260,7 +260,7 @@
                 // post newFriend information 
                 $.post("/api/friends", newFriend)
                     .then(function (data) {
-                        console.log(newFriend);                        
+                        console.log(data);
                     });
             });
 
@@ -268,16 +268,16 @@
             function compareFriend() {
 
                 // use AJAX to retrieve friend data in the friends.js file.
-                $.ajax({URL: '/api/data/friends', method: "GET"})
-                .then(function(friends){
+                $.ajax({ URL: '/api/data/friends', method: "GET" })
+                    .then(function (friends) {
 
-                    // test getting data for friends
-                    console.log(friends);
-                    console.log("Here are the available friends");
+                        // test getting data for friends
+                        console.log(friends);
+                        console.log("Here are the available friends");
 
-                    
 
-                })
+
+                    })
             }
 
 
