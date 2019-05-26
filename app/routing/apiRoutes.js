@@ -14,9 +14,6 @@ module.exports = function (app) {
 
     });
 
-
-
-
     // POST route to handle incoming surveys
     app.post('/api/friends', function (req, res) {
     const addFriend = req.body;

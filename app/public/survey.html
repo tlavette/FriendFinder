@@ -41,11 +41,11 @@
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                         <select class="custom-select mr-sm-2" style="width:auto" id="q1">
                             <option selected>Select Answer</option>
-                            <option value="1">(Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">(Strongly Agree)</option>
+                            <option value=1>(Strongly Disagree)</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>(Strongly Agree)</option>
                         </select>
                     </div>
                 </div>
@@ -59,11 +59,11 @@
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
                         <select class="custom-select mr-sm-2" style="width:auto" id="q2">
                             <option selected>Select Answer</option>
-                            <option value="1">(Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">(Strongly Agree)</option>
+                            <option value=1>(Strongly Disagree)</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>(Strongly Agree)</option>
                         </select>
                     </div>
                 </div>
@@ -261,6 +261,7 @@
                 $.post("/api/friends", newFriend)
                     .then(function (data) {
                         console.log(data);
+                        $("#friendModal").modal("show");
                     });
             });
 
@@ -277,12 +278,41 @@
 
 
 
+
                     })
             }
 
 
 
         </script>
+
+
+
+
+
+
+<div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="friendModal">Friend Results</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Need name and picture of match here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 </body>
 
 </html>
